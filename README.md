@@ -40,7 +40,7 @@ Installer va portable versiya `dist/` papkasida paydo bo'ladi.
 App uchun `icon.ico` fayli ishlatiladi.
 
 ## 👤 Muallif
-Sizning ismingiz
+Yaqubjanov Abduqodir Telegram: @Abduqodir_Pythoneer
 
 ---
 
