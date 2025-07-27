@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Defender - Epic Space Shooter</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="menu" class="screen">
+            <h1 class="title">SPACE DEFENDER</h1>
+            <div class="subtitle">Epic Space Shooter Adventure</div>
+            <button id="startBtn" class="btn">START GAME</button>
+            <button id="instructionsBtn" class="btn">INSTRUCTIONS</button>
+            <div class="highScore">High Score: <span id="highScore">0</span></div>
+        </div>
+
+        <div id="instructions" class="screen hidden">
+            <h2>How to Play</h2>
+            <div class="instructions-content">
+                <p>🚀 <strong>Move:</strong> Use WASD or Arrow Keys</p>
+                <p>💥 <strong>Shoot:</strong> Press SPACEBAR</p>
+                <p>🎯 <strong>Goal:</strong> Destroy enemies and survive as long as possible!</p>
+                <p>⭐ <strong>Power-ups:</strong> Collect stars for special abilities</p>
+                <p>💎 <strong>Score:</strong> More enemies = higher score</p>
+            </div>
+            <button id="backBtn" class="btn">BACK TO MENU</button>
+        </div>
+
+        <div id="gameScreen" class="screen hidden">
+            <canvas id="gameCanvas"></canvas>
+            <div id="ui">
+                <div id="score">Score: <span id="scoreValue">0</span></div>
+                <div id="lives">Lives: <span id="livesValue">3</span></div>
+                <div id="level">Level: <span id="levelValue">1</span></div>
+            </div>
+            <div id="gameOver" class="hidden">
+                <h2>GAME OVER</h2>
+                <p>Final Score: <span id="finalScore">0</span></p>
+                <button id="restartBtn" class="btn">PLAY AGAIN</button>
+                <button id="menuBtn" class="btn">MAIN MENU</button>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html> 
